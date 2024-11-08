@@ -1,0 +1,165 @@
+/* Color Palette */
+:root {
+    --dark-blue: #08161d;
+    --yellow: #f4cc35;
+    --light-blue: #bbd3eb;
+    --teal: #38919f;
+    --blue-grey: #7096a9;
+    --light-yellow: #ebda8b;
+    --off-white: #faf7df;
+    --grey-blue: #5c646e;
+    --muted-blue: #91a7b9;
+    --grey: #8c94a4;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--off-white);
+    color: var(--dark-blue);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar nav a {
+    color: var(--off-white);
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.navbar nav a:hover {
+    color: var(--yellow);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--light-blue);
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    color: var(--dark-blue);
+    font-size: 2.5rem;
+}
+
+.hero p {
+    color: var(--grey);
+    font-size: 1.2rem;
+}
+
+/* Timetable Upload Section */
+.timetable {
+    background-color: var(--light-yellow);
+    padding: 2rem;
+    text-align: center;
+}
+
+.timetable form {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.timetable input,
+.timetable button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.timetable button {
+    background-color: var(--teal);
+    color: var(--off-white);
+    border: none;
+    cursor: pointer;
+}
+
+.timetable button:hover {
+    background-color: var(--yellow);
+}
+
+/* Club Section */
+.clubs {
+    background-color: var(--muted-blue);
+    padding: 2rem;
+    text-align: center;
+}
+
+.clubs input, .clubs textarea, .clubs button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 300px;
+    max-width: 100%;
+}
+
+.clubs button {
+    background-color: var(--teal);
+    color: var(--off-white);
+    border: none;
+    cursor: pointer;
+}
+
+.clubs button:hover {
+    background-color: var(--yellow);
+}
+
+/* Daily Planner Section */
+.daily-planner {
+    background-color: var(--grey-blue);
+    padding: 2rem;
+    text-align: center;
+}
+
+.planner input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.planner button {
+    background-color: var(--teal);
+    color: var(--off-white);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.planner button:hover {
+    background-color: var(--yellow);
+}
+
+/* Task List */
+#taskList {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.task {
+    background-color: var(--light-yellow);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid var(--grey);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Vehicle</title>
+    <link rel="stylesheet" href="css/rent.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Campus Vehicle Rentals</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Vehicles</a>
+                <a href="#">Rent a Vehicle</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Rent the Perfect Vehicle for Your Needs</h2>
+            <p>Find bicycles, scooters, bikes, and cars at affordable rates.</p>
+        </div>
+    </section>
+
+    <section class="filter">
+        <h2>Find Your Ride</h2>
+        <div class="filter-container">
+            <select id="vehicleType">
+                <option value="">All Vehicles</option>
+                <option value="car">Car</option>
+                <option value="bike">Bike</option>
+                <option value="scooter">Scooter</option>
+                <option value="bicycle">Bicycle</option>
+            </select>
+            <input type="number" id="minPrice" placeholder="Min Price">
+            <input type="number" id="maxPrice" placeholder="Max Price">
+            <button onclick="filterVehicles()">Search</button>
+        </div>
+    </section>
+
+    <section class="vehicle-listing" id="vehicleListing">
+        <!-- Vehicle Cards will be dynamically inserted here -->
+    </section>
+
+    <section class="rent-form">
+        <h2>Request a Vehicle</h2>
+        <form id="rentForm">
+            <input type="text" id="studentName" placeholder="Your Name" required>
+            <input type="email" id="studentEmail" placeholder="Your Email" required>
+            <select id="vehicleSelect">
+                <option value="car">Car</option>
+                <option value="bike">Bike</option>
+                <option value="scooter">Scooter</option>
+                <option value="bicycle">Bicycle</option>
+            </select>
+            <input type="date" id="rentDate" required>
+            <button type="submit">Request Vehicle</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Campus Vehicle Rentals. All rights reserved.</p>
+    </footer>
+
+    <script src="js/rent.js"></script>
+</body>
+</html>

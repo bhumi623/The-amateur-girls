@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>CampusConnect</h1>
+            <nav>
+                <ul>
+                    <li><a href="#skills">Skill Marketplace</a></li>
+                    <li><a href="#doubts">Ask Anonymous Doubts</a></li>
+                    <li><a href="#vehicles">Vehicle Rentals</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Connect, Learn, Share, and Explore</h2>
+            <p>Collaborate with your peers, rent vehicles, and solve doubts anonymously.</p>
+            <a href="#skills" class="btn">Get Started</a>
+        </div>
+    </section>
+<div class="section-container">
+    <!-- Skill Marketplace Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skill Marketplace</h2>
+            <p>Share your skills or find someone with the skills you need.</p>
+            <div id="skill-list"></div>
+            <button id="addSkillBtn" onclick="window.location.href='skillsfind.html'";>Add Your Skill</button>
+        </div>
+    </section>
+    <!-- Skill Tutorial Section -->
+    <section id="skillstut" class="section">
+        <div class="container">
+            <h2>Skill Tutorial</h2>
+            <p>Share your skills or find someone with the skills you need.</p>
+            <div id="skill-list"></div>
+            <button id="addSkillBtn" onclick="window.location.href='teach.html'";>Add Your Skill</button>
+        </div>
+    </section>
+    <!-- Organize your Events Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Organize your events</h2>
+            <p>Share your skills or find someone with the skills you need.</p>
+            <div id="skill-list"></div>
+            <button id="addSkillBtn" onclick="window.location.href='organize.html'";>Add Your Skill</button>
+        </div>
+    </section>
+
+    
+
+    <!-- Vehicle Rentals Section -->
+    <section id="vehicles" class="section">
+        <div class="container">
+            <h2>Vehicle Rentals</h2>
+            <p>Find a ride or rent out your vehicle.</p>
+            <div id="vehicle-list"></div>
+            <button id="addVehicleBtn" onclick="window.location.href='rent.html'";>Add Your Vehicle</button>
+        </div>
+    </section>
+</div>
+
+    <!-- Floating logo button to open the copilot tab -->
+    <div class="copilot-logo" id="copilotLogo">
+        <img src="logo.jpg" alt="Copilot Logo" />
+    </div>
+
+    <!-- AI Chat Window -->
+    <div class="copilot-chat" id="copilotChat">
+        <div class="copilot-header">
+            <h2>AI Copilot</h2>
+            <button id="closeChat" class="close-btn">X</button>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <!-- Chat messages will appear here -->
+        </div>
+        <input type="text" id="chatInput" placeholder="Ask me anything..." />
+        <button id="sendMessage" class="send-btn">Send</button>
+    </div>
+
+    
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="about" class="footer">
+        <div class="container">
+            <p>CampusConnect - A platform by students, for students. Empowering collaboration and convenience.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #08161d; /* Dark Blue */
+    background-color: #faf7df; /* Very Light Yellow */
+}
+
+header {
+    background-color: #5c646e; /* Muted Blue */
+    color: #faf7df; /* Light Yellow */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #faf7df; /* Light Yellow */
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #bbd3eb; /* Soft Blue */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #08161d; /* Dark Blue */
+}
+
+.hero .btn {
+    background-color: #f4cc35; /* Yellow */
+    color: #08161d; /* Dark Blue */
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background-color: #ebda8b; /* Light Yellow */
+}
+
+/* Section Container */
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Style each section */
+.section {
+    width: 23%;
+    background-color: #bbd3eb; /* Soft Blue */
+    padding: 20px;
+    border: 2px solid #7096a9; /* Muted Blue */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #08161d; /* Dark Blue */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .section-container {
+        justify-content: center;
+    }
+
+    .section {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Button Style */
+button {
+    padding: 10px 20px;
+    background-color: #f4cc35; /* Yellow */
+    color: #08161d; /* Dark Blue */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ebda8b; /* Light Yellow */
+}
+
+/* Footer */
+footer {
+    background-color: #38919f; /* Teal */
+    color: #faf7df; /* Light Yellow */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Container for the website */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Floating logo button */
+.copilot-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.copilot-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+/* AI Chat Window */
+.copilot-chat {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.copilot-header {
+    background-color: #38919f; /* Teal */
+    color: #faf7df; /* Light Yellow */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.copilot-header h2 {
+    margin: 0;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    color: #faf7df; /* Light Yellow */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat-box {
+    padding: 10px;
+    height: 350px;
+    overflow-y: auto;
+}
+
+.chat-box .message {
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.chat-box .message.ai {
+    background-color: #d9f7ff; /* Light Blue */
+}
+
+.chat-box .message.user {
+    background-color: #cfe2f3; /* Light Blue */
+    text-align: right;
+}
+
+/* Chat Input and Send Button */
+#chatInput {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Bright Blue */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #0056b3; /* Darker Blue */
+}

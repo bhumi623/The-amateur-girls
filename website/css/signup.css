@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 900px;
+    transition: all 0.5s ease;
+}
+
+.form-box {
+    width: 45%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hide sign-up box initially */
+#sign-up-box {
+    display: none;
+}
+
+/* Add transition effects */
+#sign-in-box.collapsed {
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
+}
+
+#sign-up-box.expanded {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}

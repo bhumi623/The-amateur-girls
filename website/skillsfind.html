@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Share - Campus Connections</title>
+    <link rel="stylesheet" href="css/skillsfind.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Campus Skill Connect</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Find Skills</a>
+                <a href="#">Share Skills</a>
+                <a href="#">My Profile</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Share Your Skills, Find Your Match</h2>
+            <p>Discover and connect with students who have the skills you need.</p>
+        </div>
+    </section>
+
+    <section class="search">
+        <h2>Find Skills</h2>
+        <div class="search-container">
+            <input type="text" id="skillSearch" placeholder="Search for skills..." onkeyup="searchSkills()">
+            <button onclick="searchSkills()">Search</button>
+        </div>
+    </section>
+
+    <section class="profiles" id="profiles">
+        <!-- Profile cards will appear here dynamically -->
+    </section>
+
+    <section class="share-skills">
+        <h2>Share Your Skills</h2>
+        <form id="shareSkillsForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="skill" placeholder="Your Skill" required>
+            <textarea id="description" placeholder="Describe your skill" required></textarea>
+            <button type="submit">Submit Skill</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Campus Skill Connect. All rights reserved.</p>
+    </footer>
+
+    <script src="js/skillsfind.js"></script>
+</body>
+</html>

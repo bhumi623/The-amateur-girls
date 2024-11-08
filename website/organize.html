@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Organizer</title>
+    <link rel="stylesheet" href="css/organize.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Campus Organizer</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Timetable</a>
+                <a href="#">Clubs</a>
+                <a href="#">Daily Planner</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Organize Your College Life</h2>
+            <p>Upload your timetable, manage your clubs, and stay on top of your tasks.</p>
+        </div>
+    </section>
+
+    <section class="timetable">
+        <h2>Upload Timetable</h2>
+        <form id="timetableForm">
+            <label for="timetableFile">Choose your timetable (PDF, PNG, JPG):</label>
+            <input type="file" id="timetableFile" accept=".pdf,.png,.jpg" required>
+            <button type="submit">Upload Timetable</button>
+        </form>
+    </section>
+
+    <section class="clubs">
+        <h2>Organize Club Activities</h2>
+        <form id="clubForm">
+            <input type="text" id="clubName" placeholder="Club Name" required>
+            <input type="text" id="clubActivity" placeholder="Activity Title" required>
+            <input type="date" id="clubDate" required>
+            <textarea id="clubDescription" placeholder="Activity Description" required></textarea>
+            <button type="submit">Create Activity</button>
+        </form>
+    </section>
+
+    <section class="daily-planner">
+        <h2>Daily Planner</h2>
+        <div class="planner">
+            <input type="text" id="task" placeholder="Enter your task" required>
+            <input type="time" id="taskTime" required>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div id="taskList">
+            <!-- Tasks will be listed here dynamically -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Campus Organizer. All rights reserved.</p>
+    </footer>
+
+    <script src="js/organize.js"></script>
+</body>
+</html>
