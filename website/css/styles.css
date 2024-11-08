@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,27 +8,30 @@ body {
     background-color: #faf7df; /* Very Light Yellow */
 }
 
+/* Header styling */
 header {
-    background-color: #5c646e; /* Muted Blue */
-    color: #faf7df; /* Light Yellow */
+    background-color: #91a7b9; /* Change to your preferred color */
     padding: 20px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+/* Styling the logo container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+/* Image styling: adjust size */
+.logo-container img {
+    width: 200px;  /* Adjust to make the image smaller */
+    height: auto;  /* Keep the aspect ratio intact */
+    border: 2px solid transparent;  /* Add a border if needed */
+    border-radius: 50%; /* Optional: makes the image circular */
 }
 
-header nav ul li a {
-    color: #faf7df; /* Light Yellow */
-    text-decoration: none;
-}
 
 .hero {
     background-color: #bbd3eb; /* Soft Blue */
@@ -66,7 +69,7 @@ header nav ul li a {
 /* Style each section */
 .section {
     width: 23%;
-    background-color: #bbd3eb; /* Soft Blue */
+    background-color: #8c94a4;; /* Soft Blue */
     padding: 20px;
     border: 2px solid #7096a9; /* Muted Blue */
     border-radius: 8px;
@@ -215,4 +218,32 @@ footer {
 
 .send-btn:hover {
     background-color: #0056b3; /* Darker Blue */
+}
+
+/* Container for the left buttons */
+.left-buttons {
+    position: fixed;
+    left: 10px;  /* Positioning on the left side */
+    top: 98%;
+    transform: translateY(-98%);  /* Center vertically */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Space between the buttons */
+}
+
+/* Style for each button */
+.left-btn {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;  /* Rounded button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the images inside the buttons */
+.left-btn img {
+    width: 40px;
+    height: 40px;  /* Adjust the size of the images */
+    border-radius: 50%;  /* Makes the image circular */
 }

@@ -9,25 +9,21 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <h1>CampusConnect</h1>
-            <nav>
-                <ul>
-                    <li><a href="#skills">Skill Marketplace</a></li>
-                    <li><a href="#doubts">Ask Anonymous Doubts</a></li>
-                    <li><a href="#vehicles">Vehicle Rentals</a></li>
-                    <li><a href="#about">About Us</a></li>
-                </ul>
-            </nav>
+       
+        <div class="logo-container">
+            <img src="img/Picsart_24-11-08_14-38-38-731.jpg" alt="CampusConnect Logo">
         </div>
+            
+       
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h2>Connect, Learn, Share, and Explore</h2>
-            <p>Collaborate with your peers, rent vehicles, and solve doubts anonymously.</p>
-            <a href="#skills" class="btn">Get Started</a>
+            <h2>About Us</h2>
+            <p>
+                College Nest is a platform designed to address the common challenges that students face during their academic journey. From finding the right skills and resources to collaborating with peers, students often struggle with isolation and a lack of opportunities. Our website helps bridge this gap by offering a skill marketplace, allowing students to share and discover talents, a platform for vehicle rentals, and a space for organizing events. With features like anonymous doubt-solving and peer-to-peer learning, College Nest fosters a sense of community and empowers students to make the most of their time at college. Whether it's learning new skills, renting a bike, or organizing an event, College Nest brings students together and makes college life easier and more connected.</p>
+            
         </div>
     </section>
 <div class="section-container">
@@ -35,25 +31,25 @@
     <section id="skills" class="section">
         <div class="container">
             <h2>Skill Marketplace</h2>
-            <p>Share your skills or find someone with the skills you need.</p>
+            <p>Share your skills or find teammates for competitions and projects! Simply post the skills you have or browse through others' profiles to connect with students who have the expertise you need. Whether you're looking to collaborate on a hackathon, a club event, or a class project, College Nest helps you find the perfect partner to achieve your goals.</p>
             <div id="skill-list"></div>
-            <button id="addSkillBtn" onclick="window.location.href='skillsfind.html'";>Add Your Skill</button>
+            <button id="addSkillBtn" onclick="window.location.href='skillsfind.html'";>Get Started</button>
         </div>
     </section>
     <!-- Skill Tutorial Section -->
     <section id="skillstut" class="section">
         <div class="container">
             <h2>Skill Tutorial</h2>
-            <p>Share your skills or find someone with the skills you need.</p>
+            <p>Need help with college subjects or preparing for exams? College Nest’s Skill Tutorial feature allows you to share your knowledge or find tutors for specific subjects. Whether you're a pro at math, science, or literature, you can offer tutorials to peers or find the help you need to ace your exams. Collaborate, learn, and succeed with skill-based tutorials tailored to your academic needs.</p>
             <div id="skill-list"></div>
-            <button id="addSkillBtn" onclick="window.location.href='teach.html'";>Add Your Skill</button>
+            <button id="addSkillBtn" onclick="window.location.href='teach.html'";>Get Started</button>
         </div>
     </section>
     <!-- Organize your Events Section -->
     <section id="skills" class="section">
         <div class="container">
             <h2>Organize your events</h2>
-            <p>Share your skills or find someone with the skills you need.</p>
+            <p>Planning a college event, club activity, or group project? College Nest makes it easy to organize and manage events. Share details, gather participants, and track progress – all in one place. Whether it’s a seminar, workshop, or social gathering, you can collaborate with fellow students to make your event a success. Stay organized, get the word out, and make every event memorable with College Nest!</p>
             <div id="skill-list"></div>
             <button id="addSkillBtn" onclick="window.location.href='organize.html'";>Add Your Skill</button>
         </div>
@@ -65,17 +61,15 @@
     <section id="vehicles" class="section">
         <div class="container">
             <h2>Vehicle Rentals</h2>
-            <p>Find a ride or rent out your vehicle.</p>
+            <p>Need a ride or want to rent out your vehicle? College Nest’s Vehicle Rental feature connects students with the perfect transportation option. Whether you need a bike, scooter, or car for a day or a week, find affordable rentals nearby. You can also rent out your vehicle to fellow students, making it easy to share resources and reduce costs. Convenient, flexible, and student-friendly – travel smart with College Nest!</p>
             <div id="vehicle-list"></div>
-            <button id="addVehicleBtn" onclick="window.location.href='rent.html'";>Add Your Vehicle</button>
+            <button id="addVehicleBtn" onclick="window.location.href='rent.html'";>Get Started</button>
         </div>
     </section>
 </div>
-
-    <!-- Floating logo button to open the copilot tab -->
-    <div class="copilot-logo" id="copilotLogo">
-        <img src="logo.jpg" alt="Copilot Logo" />
-    </div>
+<div class="copilot-logo" id="copilotLogo">
+    <img src="img/logo.jpg" alt="Copilot Logo" />
+</div>
 
     <!-- AI Chat Window -->
     <div class="copilot-chat" id="copilotChat">
@@ -90,7 +84,14 @@
         <button id="sendMessage" class="send-btn">Send</button>
     </div>
 
-    
+    <div class="left-buttons">
+        <button class="left-btn" id="button1">
+            <img src="img/inco.jpg" alt="Button 1" />
+        </button>
+        <button class="left-btn" id="button2">
+            <img src="img/chat.jpg" alt="Button 2" />
+        </button>
+    </div>
 
 
 
