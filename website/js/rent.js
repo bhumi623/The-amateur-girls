@@ -17,7 +17,7 @@ function displayVehicles(vehicleList) {
         vehicleCard.innerHTML = `
             <h3>${vehicle.name}</h3>
             <p>Type: ${vehicle.type.charAt(0).toUpperCase() + vehicle.type.slice(1)}</p>
-            <p>Price: $${vehicle.price}/day</p>
+            
         `;
         vehicleListing.appendChild(vehicleCard);
     });
