@@ -2,7 +2,7 @@
 const profiles = [
     { name: 'Mrigakhi', skill: 'Web Development', description: 'Experienced in HTML, CSS, and JavaScript.' },
     { name: 'Bhumi', skill: 'Data Analysis', description: 'Skilled in Python and Excel for data analysis.' },
-    { name: 'Shruti', skill: 'Graphic Design', description: 'Proficient in Adobe Photoshop and Illustrator.' },
+    { name: 'Shristi', skill: 'Graphic Design', description: 'Proficient in Adobe Photoshop and Illustrator.' },
     { name: 'Parishmita', skill: 'Photography', description: 'Experienced in portrait and landscape photography.' },
 ];
 
