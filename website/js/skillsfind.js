@@ -1,9 +1,9 @@
 // Sample data for profiles (this could be dynamically fetched from a database)
 const profiles = [
-    { name: 'John Doe', skill: 'Web Development', description: 'Experienced in HTML, CSS, and JavaScript.' },
-    { name: 'Jane Smith', skill: 'Data Analysis', description: 'Skilled in Python and Excel for data analysis.' },
-    { name: 'Mary Lee', skill: 'Graphic Design', description: 'Proficient in Adobe Photoshop and Illustrator.' },
-    { name: 'Jake White', skill: 'Photography', description: 'Experienced in portrait and landscape photography.' },
+    { name: 'Mrigakhi', skill: 'Web Development', description: 'Experienced in HTML, CSS, and JavaScript.' },
+    { name: 'Bhumi', skill: 'Data Analysis', description: 'Skilled in Python and Excel for data analysis.' },
+    { name: 'Shruti', skill: 'Graphic Design', description: 'Proficient in Adobe Photoshop and Illustrator.' },
+    { name: 'Parishmita', skill: 'Photography', description: 'Experienced in portrait and landscape photography.' },
 ];
 
 // Display profiles dynamically

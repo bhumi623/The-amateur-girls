@@ -1,9 +1,9 @@
 // Sample data for vehicle listing (normally fetched from server)
 const vehicles = [
-    { id: 1, type: 'car', name: 'Toyota Corolla', price: 25 },
-    { id: 2, type: 'bike', name: 'Harley Davidson', price: 15 },
-    { id: 3, type: 'scooter', name: 'Vespa LX', price: 10 },
-    { id: 4, type: 'bicycle', name: 'Giant Road Bike', price: 5 },
+    { id: 1, type: 'car', name:'Audi' },
+    { id: 2, type: 'bike', name: 'Hero Honda'},
+    { id: 3, type: 'scooter', name: 'Yamaha'},
+    { id: 4, type: 'bicycle', name: 'Decathlon' },
 ];
 
 // Display the vehicles on the page
